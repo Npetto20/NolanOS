@@ -34,3 +34,24 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+          
+          - name: Datadog Agent
+  # You may pin to the exact commit or the version.
+  # uses: DataDog/agent-github-action@9e31e08e9eebe3eb04401dd3e5a1dedefe989d97
+  uses: DataDog/agent-github-action@v1.3
+  with:
+    # The Datadog Agent container name
+    container_name: # default is datadog-agent
+    # The Datadog Agent container image name to use
+    image_name: # default is gcr.io/datadoghq/agent
+    # The Datadog API key
+    api_key: 
+    # The Datadog site
+    datadog_site: # default is datadoghq.com
+    # A comma separated list of environment variables to pass to the agent
+    extra_env: # optional
+    # The maximum number of times the action will poll the agent to see if it is ready
+    max_retries: # default is 10
+    # The initial wait time in seconds between polls to see if the agent is ready
+    initial_wait_time: # default is 5
