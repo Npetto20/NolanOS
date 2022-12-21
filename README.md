@@ -12,5 +12,5 @@ Visit the GitHub pages URL here: https://npetto20.github.io/NolanOS/
 The website is mainly on replit, but if you choose to use github it's fine. Find system.html and open that, and there you go! All the same features, but on a file.
 
 # Credits
-Nobody but me.
+@Npetto2 & Jarrett (no github)
 
